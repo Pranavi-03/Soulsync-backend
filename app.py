@@ -12,7 +12,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
+CORS(app, origins="*", supports_credentials=True)
 
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)

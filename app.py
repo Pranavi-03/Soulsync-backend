@@ -14,7 +14,8 @@ load_dotenv()
 app = Flask(__name__)
 #CORS(app)
 #CORS(app, origins="*", supports_credentials=True)
-CORS(app, origins=["https://your-vercel-app.vercel.app"], supports_credentials=True)
+#CORS(app, origins=["https://your-vercel-app.vercel.app"], supports_credentials=True)
+CORS(app, origins=["https://soulsync-frontend-l3jp.vercel.app"], supports_credentials=True)
 
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
